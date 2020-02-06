@@ -1,0 +1,151 @@
+Changes:-
+1)Achieved 99.41% in 19 iteration
+
+2)Modified learning rate using lr_scheduler, with gamma=0.5 and step and 10th,13th and 16th epoch
+
+3)Model definition:-
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.conv1 = nn.Conv2d(1, 16, 3) #input 28x28x3 OUtput 26x26x16 RF 3
+        self.bn1 = nn.BatchNorm2d(16)
+        #self.dp1 = nn.Dropout2d(0.2)
+
+        self.conv2 = nn.Conv2d(16, 16, 3) #input 26x26x16 OUtput 24x24x16 RF 5
+        self.bn2 = nn.BatchNorm2d(16)
+        #self.dp2 = nn.Dropout2d(0.2)
+
+        self.conv3 = nn.Conv2d(16, 16, 3) #input 24x24x16 OUtput 22x22x16 RF 7
+        self.bn3 = nn.BatchNorm2d(16)
+        #self.dp3 = nn.Dropout2d(0.2)
+        
+        self.pool1 = nn.MaxPool2d(2, 2)  #input 22x22x16 OUtput 11x11x16 RF 8
+
+        self.conv4 = nn.Conv2d(16, 8, 1) #input 11x11x16 OUtput 11x11x8 RF 8
+        self.bn4 = nn.BatchNorm2d(8)
+        
+        self.conv5 = nn.Conv2d(8, 16, 3) #input 11x11x8 OUtput 9x9x16 RF 12
+        self.bn5 = nn.BatchNorm2d(16)
+        self.dp5 = nn.Dropout2d(0.2)
+
+        self.conv6 = nn.Conv2d(16, 16, 3) #input 9x9x16 OUtput 7x7x16 RF 16
+        self.bn6 = nn.BatchNorm2d(16)
+        self.dp6 = nn.Dropout2d(0.2)
+
+        self.conv7 = nn.Conv2d(16, 16, 3) #input 7x7x16 OUtput 5x5x16 RF 20
+        self.bn7 = nn.BatchNorm2d(16)
+        self.dp7 = nn.Dropout2d(0.2)
+
+        self.conv8 = nn.Conv2d(16, 10, 5) #input 5x5x16 OUtput 1x1x10 RF 2
+        
+
+    def forward(self, x):
+        x = (self.bn1(F.relu(self.conv1(x)))) 3
+        x = (self.bn2(F.relu(self.conv2(x)))) 5
+        x = self.pool1((self.bn3(F.relu(self.conv3(x))))) 7->14
+        x = self.bn4(F.relu(self.conv4(x))) 14
+        x = self.dp5(self.bn5(F.relu(self.conv5(x)))) 16
+        x = self.dp6(self.bn6(F.relu(self.conv6(x)))) 18
+        x = self.dp7(self.bn7(F.relu(self.conv7(x)))) 20
+        x = self.conv8(x) 
+        x = x.view(-1, 10)
+        return F.log_softmax(x)
+		
+Result:-
+
+0%|          | 0/469 [00:00<?, ?it/s]/usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:46: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+loss=0.13633079826831818 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.07it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0611, Accuracy: 9810/10000 (98.10%)
+
+0.1 2
+loss=0.2748231291770935 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.80it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0412, Accuracy: 9868/10000 (98.68%)
+
+0.1 3
+loss=0.037184134125709534 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.74it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0399, Accuracy: 9868/10000 (98.68%)
+
+0.1 4
+loss=0.007356181740760803 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.89it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0343, Accuracy: 9895/10000 (98.95%)
+
+0.1 5
+loss=0.05613306164741516 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.82it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0313, Accuracy: 9893/10000 (98.93%)
+
+0.1 6
+loss=0.05480282008647919 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.88it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0330, Accuracy: 9897/10000 (98.97%)
+
+0.1 7
+loss=0.0691811665892601 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.47it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0270, Accuracy: 9916/10000 (99.16%)
+
+0.1 8
+loss=0.021256044507026672 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.59it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0334, Accuracy: 9894/10000 (98.94%)
+
+0.1 9
+loss=0.07790587842464447 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 27.01it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0366, Accuracy: 9898/10000 (98.98%)
+
+0.1 10
+loss=0.036421675235033035 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.56it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0253, Accuracy: 9924/10000 (99.24%)
+
+0.05 11
+loss=0.05021822080016136 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.86it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0240, Accuracy: 9923/10000 (99.23%)
+
+0.05 12
+loss=0.011115550994873047 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.72it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0224, Accuracy: 9928/10000 (99.28%)
+
+0.05 13
+loss=0.010726879350841045 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.50it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0221, Accuracy: 9933/10000 (99.33%)
+
+0.025 14
+loss=0.07850363105535507 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.86it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0226, Accuracy: 9934/10000 (99.34%)
+
+0.025 15
+loss=0.013993660919368267 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.76it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0221, Accuracy: 9929/10000 (99.29%)
+
+0.025 16
+loss=0.026475122198462486 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.83it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0217, Accuracy: 9933/10000 (99.33%)
+
+0.0125 17
+loss=0.007312645670026541 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.97it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0215, Accuracy: 9939/10000 (99.39%)
+
+0.0125 18
+loss=0.031248504295945168 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.56it/s]
+  0%|          | 0/469 [00:00<?, ?it/s]
+Test set: Average loss: 0.0219, Accuracy: 9936/10000 (99.36%)
+
+0.0125 19
+loss=0.04813094809651375 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.93it/s]
+
+Test set: Average loss: 0.0210, Accuracy: 9941/10000 (99.41%)
+
+0.0125 20
