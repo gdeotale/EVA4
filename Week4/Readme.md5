@@ -7,9 +7,19 @@ Implementation details:-
 
 2) Mostly i have used 3x3x16 kernels, Batchnorm2d and Dropout layer, one maxpool and one 1x1x8 kernel 
 
-3) Used log_softmax loss and SGD optimizer.
+3) Used NLL loss and SGD optimizer.
 
-4)Model definition:-
+4) The model has 
+Total params: 14,962
+Trainable params: 14,962
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.51
+Params size (MB): 0.06
+Estimated Total Size (MB): 0.57
+
+5) Model definition:-
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -57,7 +67,7 @@ class Net(nn.Module):
         x = x.view(-1, 10)
         return F.log_softmax(x)
 		
-Result:-
+6) Result:-
 
 0%|          | 0/469 [00:00<?, ?it/s]/usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:46: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
 loss=0.13633079826831818 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.07it/s]
