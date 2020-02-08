@@ -1,9 +1,15 @@
-Changes:-
-1)Achieved 99.41% in 19 iteration
+                                               MNIST IMAGE CLASSIFICATION
 
-2)Modified learning rate using lr_scheduler, with gamma=0.5 and step and 10th,13th and 16th epoch
+Following is pytorch implementation of MNIST dataset. I have trained for 20epochs in which i have achived Achieved 99.41% in 19 iteration. The accuracy can go further if trained further.
 
-3)Model definition:-
+Implementation details:-
+1)Learning rate started with 0.1. Modified learning rate using lr_scheduler, with gamma=0.5 and step and 10th,13th and 16th epoch
+
+2) Mostly i have used 3x3x16 kernels, Batchnorm2d and Dropout layer, one maxpool and one 1x1x8 kernel 
+
+3) Used log_softmax loss and SGD optimizer.
+
+4)Model definition:-
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
