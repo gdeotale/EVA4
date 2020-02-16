@@ -1,0 +1,68 @@
+Lighter model
+Target: Try to increase training accuracy as much as possible with minimal number of parameters tending but tending to 10k.
+Don't worry about overfitting here, but try to increase train accuracy here
+
+Results:
+Parameters: 8,912
+Best Train Accuracy: 98.77
+Best Test Accuracy: 98.80
+
+Analysis:
+Good model!
+No over-fitting, model is capable if pushed further
+
+BATCHNORM 
+Target: Although above model is good with almost no overfit, somehow model is not able to reach good train/test accuracy, withing given number of epochs.
+Batch norm may come to rescue Batch normalization is a technique for training very deep neural networks that standardizes the inputs to a layer for each 
+mini-batch. This has the effect of stabilizing the learning process and dramatically reducing the number of training epochs required to train deep network.
+Add Batch-norm to increase model efficiency.
+Don't worry about overfitting here
+
+Results:
+Parameters: 9364 
+Best Train Accuracy: 99.35
+Best Test Accuracy: 99.18
+
+Analysis:
+We have started to see over-fitting now. 
+Even if the model is pushed further, it might reach 99.4 but we need more epochs which we don't have and training margin is less, which could have pushed
+network to improve faster.
+
+
+Regularization:
+Target: Add Regularization, Dropout, which in turn can reduce overfit and increase training loss, thus, pushing network to improve on test accuracy.
+
+Results:
+Parameters: 9364
+Best Train Accuracy: 95.06
+Best Train Accuracy: 99.34
+
+Analysis:
+Regularization working. 
+Thus we added regularization, although reducing training accuracy we improved on test accuracy and bringing it closer to 99.4% although we didn't reach our goal yet.
+We have used dropout of 0.1
+
+Augmentation:
+Target: Can we improve on testing accuracy by putting little more burden on train data by adding augmentation.
+Add rotation, our guess is that 15 degrees should be sufficient. 
+
+Results:
+Parameters: 9364
+Best Train Accuracy: 94.56
+Best Test Accuracy: 99.47
+
+Analysis:
+Training accuracy has gone down from 95.06 previously to 94.56. This is fine, as we know we have made our train data harder. The test accuracy is also up, which means our test data had few images 
+which had transformation difference w.r.t. train dataset. We have reached our goal above 99.4 here.
+
+Overkill:
+Target:
+Add LR Scheduler
+Results:
+Parameters: 9364
+Best Train Accuracy: 94.89
+Best Test Accuracy: 99.41 (13th Epoch), 99.4 (15th Epoch)
+Analysis:
+Finding a good LR schedule is hard. We have tried to make it effective by reducing LR at 4th, 8th, 12th taking LR from 0.1 to 0.05 to 0.025. It did help in getting to 99.4 or more faster, but final accuracy is not more than 99.47.
+However, we have touched 99.4 twice which was not achieved previously. Possibly a good scheduler can do wonders here!
+
