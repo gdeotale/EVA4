@@ -8,7 +8,7 @@ import cudas
 transform = transforms.Compose(
     [transforms.RandomHorizontalFlip(),
      transforms.ToTensor(),
-     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261))])
 
 # dataloader arguments - something you'll fetch these from cmdprmt
 dataloader_args = dict(shuffle=True, batch_size=128, num_workers=4, pin_memory=True) if cudas.cuda else dict(shuffle=True, batch_size=64)

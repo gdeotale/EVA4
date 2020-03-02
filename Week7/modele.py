@@ -20,52 +20,55 @@ class Net(nn.Module):
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Dropout(0.2),
-        ) # output_size = 32
+        ) # output_size = 32, RF 3
         self.convblock2 = nn.Sequential(
             nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=1, bias=False),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Dropout(0.2),
-        ) # output_size = 32
+        ) # output_size = 32, RF 5
         self.convblock3 = nn.Sequential(
             nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=2, dilation=2, bias=False),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.Dropout(0.2),
-        ) # output_size = 32
+        ) # output_size = 32, RF 9
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+         # output_size = 16, RF 10
         self.convblock4 = nn.Sequential(
             nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3), padding=2, dilation = 2,  bias=False),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.Dropout(0.2),
-        ) # output_size = 32
+        ) # output_size = 16, RF 18
         self.convblock5 = nn.Sequential(
             nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(3, 3), padding=2, dilation=2,  bias=False),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.Dropout(0.2),
-        ) # output_size = 32
+        ) # output_size = 16, RF 26
         self.convblock5_ = nn.Sequential(
             depthwise_separable_conv(64, 64),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.Dropout(0.2),
-        ) # output_size = 32
+        ) # output_size = 16, RF 30
         self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2)
+        # output_size = 8, RF 32
         self.convblock6 = nn.Sequential(
             depthwise_separable_conv(64, 128),
             nn.BatchNorm2d(128),
             nn.ReLU(),
             nn.Dropout(0.25),
-        ) # output_size = 32
+        ) # output_size = 8, RF 40
         self.convblock7 = nn.Sequential(
             nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3), padding=2, dilation=2,  bias=False),
             nn.BatchNorm2d(128),
             nn.ReLU(),
             nn.Dropout(0.25),
-        ) # output_size = 32
-        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
+        ) # output_size = 8, RF 56
+        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2) 
+        # output_size = 4, RF 60
         self.gap = nn.Sequential(
             nn.AvgPool2d(kernel_size=4)
         ) # output_size = 1
