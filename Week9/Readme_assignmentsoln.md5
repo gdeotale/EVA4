@@ -1,0 +1,204 @@
+Highest test accuracy: 88.83
+Highest train accuracy: 100
+
+Logs
+  0%|          | 0/391 [00:00<?, ?it/s]lr=  0.1
+Epoch= 0 Loss=1.6114695072174072 Batch_id=390 Accuracy=37.50: 100%|██████████| 391/391 [01:11<00:00,  6.12it/s]
+100%|██████████| 79/79 [00:03<00:00, 23.13it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 42.13 %
+lr=  0.1
+Epoch= 1 Loss=1.4387242794036865 Batch_id=390 Accuracy=48.75: 100%|██████████| 391/391 [01:10<00:00,  6.00it/s]
+100%|██████████| 79/79 [00:03<00:00, 25.02it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 52.38 %
+lr=  0.1
+Epoch= 2 Loss=1.033722162246704 Batch_id=390 Accuracy=70.00: 100%|██████████| 391/391 [01:13<00:00,  6.04it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.57it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 63.77 %
+lr=  0.1
+Epoch= 3 Loss=0.9281638860702515 Batch_id=390 Accuracy=71.25: 100%|██████████| 391/391 [01:13<00:00,  5.96it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.48it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 65.24 %
+lr=  0.1
+Epoch= 4 Loss=0.593417763710022 Batch_id=390 Accuracy=80.00: 100%|██████████| 391/391 [01:12<00:00,  6.03it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.34it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 72.38 %
+lr=  0.1
+Epoch= 5 Loss=0.5694617033004761 Batch_id=390 Accuracy=87.50: 100%|██████████| 391/391 [01:11<00:00,  6.05it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.60it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 76.31 %
+lr=  0.1
+Epoch= 6 Loss=0.6023677587509155 Batch_id=390 Accuracy=86.25: 100%|██████████| 391/391 [01:13<00:00,  6.13it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.19it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 78.32 %
+lr=  0.1
+Epoch= 7 Loss=0.6835365295410156 Batch_id=390 Accuracy=86.25: 100%|██████████| 391/391 [01:13<00:00,  6.12it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.41it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 79.50 %
+lr=  0.1
+Epoch= 8 Loss=0.5526915788650513 Batch_id=390 Accuracy=85.00: 100%|██████████| 391/391 [01:13<00:00,  6.05it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.48it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 81.48 %
+lr=  0.1
+Epoch= 9 Loss=0.4661181569099426 Batch_id=390 Accuracy=83.75: 100%|██████████| 391/391 [01:13<00:00,  6.20it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.93it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 80.37 %
+lr=  0.1
+Epoch= 10 Loss=0.3782627582550049 Batch_id=390 Accuracy=91.25: 100%|██████████| 391/391 [01:12<00:00,  5.99it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.35it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 82.70 %
+lr=  0.1
+Epoch= 11 Loss=0.4264274537563324 Batch_id=390 Accuracy=90.00: 100%|██████████| 391/391 [01:13<00:00,  6.01it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.47it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 82.83 %
+lr=  0.1
+Epoch= 12 Loss=0.32046669721603394 Batch_id=390 Accuracy=92.50: 100%|██████████| 391/391 [01:12<00:00,  6.10it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.31it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 83.15 %
+lr=  0.1
+Epoch= 13 Loss=0.2780342698097229 Batch_id=390 Accuracy=97.50: 100%|██████████| 391/391 [01:12<00:00,  6.07it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.46it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 83.86 %
+lr=  0.1
+Epoch= 14 Loss=0.18945454061031342 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:12<00:00,  6.04it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.58it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 83.81 %
+lr=  0.1
+Epoch= 15 Loss=0.2912276089191437 Batch_id=390 Accuracy=97.50: 100%|██████████| 391/391 [01:12<00:00,  6.17it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.53it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 84.39 %
+lr=  0.1
+Epoch= 16 Loss=0.16311366856098175 Batch_id=390 Accuracy=97.50: 100%|██████████| 391/391 [01:12<00:00,  6.08it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.19it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 83.96 %
+lr=  0.1
+Epoch= 17 Loss=0.2079046219587326 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:13<00:00,  6.05it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.38it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 84.32 %
+lr=  0.1
+Epoch= 18 Loss=0.22049686312675476 Batch_id=390 Accuracy=97.50: 100%|██████████| 391/391 [01:11<00:00,  6.00it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.16it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 84.22 %
+lr=  0.1
+Epoch= 19 Loss=0.24632664024829865 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:13<00:00,  6.20it/s]
+100%|██████████| 79/79 [00:03<00:00, 21.85it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 85.08 %
+lr=  0.05
+Epoch= 20 Loss=0.03154897689819336 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:12<00:00,  6.13it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.16it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.49 %
+lr=  0.05
+Epoch= 21 Loss=0.049679946154356 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:12<00:00,  6.08it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.43it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.32 %
+lr=  0.05
+Epoch= 22 Loss=0.012737196870148182 Batch_id=390 Accuracy=96.25: 100%|██████████| 391/391 [01:12<00:00,  5.93it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.35it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.59 %
+lr=  0.05
+Epoch= 23 Loss=0.0677657276391983 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.11it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.41it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.48 %
+lr=  0.05
+Epoch= 24 Loss=0.011885243467986584 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.05it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.65it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.01 %
+lr=  0.05
+Epoch= 25 Loss=0.04031486436724663 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:12<00:00,  5.97it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.66it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.18 %
+lr=  0.05
+Epoch= 26 Loss=0.04166553169488907 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.11it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.96it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.21 %
+lr=  0.05
+Epoch= 27 Loss=0.02020794153213501 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.07it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.76it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 87.54 %
+lr=  0.05
+Epoch= 28 Loss=0.03230848163366318 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.01it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.01it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 86.75 %
+lr=  0.05
+Epoch= 29 Loss=0.057937394827604294 Batch_id=390 Accuracy=98.75: 100%|██████████| 391/391 [01:13<00:00,  6.05it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.02it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 86.98 %
+lr=  0.025
+Epoch= 30 Loss=0.004532599356025457 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:11<00:00,  6.01it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.26it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.11 %
+lr=  0.025
+Epoch= 31 Loss=0.002286237431690097 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  5.93it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.22it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.03 %
+lr=  0.025
+Epoch= 32 Loss=0.0018784046405926347 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.10it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.46it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.31 %
+lr=  0.025
+Epoch= 33 Loss=0.008095121011137962 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.12it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.36it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.29 %
+lr=  0.025
+Epoch= 34 Loss=0.020454252138733864 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.15it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.57it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.50 %
+lr=  0.025
+Epoch= 35 Loss=0.011580383405089378 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.02it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.42it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.51 %
+lr=  0.025
+Epoch= 36 Loss=0.006667601875960827 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.17it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.08it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.37 %
+lr=  0.025
+Epoch= 37 Loss=0.015417891554534435 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.08it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.57it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.37 %
+lr=  0.025
+Epoch= 38 Loss=0.000529682612977922 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  5.99it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.42it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.50 %
+lr=  0.025
+Epoch= 39 Loss=0.0005515098455362022 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.06it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.39it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.17 %
+lr=  0.0125
+Epoch= 40 Loss=0.0020502805709838867 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.13it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.27it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.49 %
+lr=  0.0125
+Epoch= 41 Loss=0.0018566728103905916 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.09it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.19it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.55 %
+lr=  0.0125
+Epoch= 42 Loss=0.005026102066040039 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.11it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.62it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.78 %
+lr=  0.0125
+Epoch= 43 Loss=0.0020666359923779964 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:11<00:00,  6.15it/s]
+100%|██████████| 79/79 [00:03<00:00, 21.84it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.61 %
+lr=  0.0125
+Epoch= 44 Loss=0.0008006691932678223 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.14it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.55it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.56 %
+lr=  0.0125
+Epoch= 45 Loss=0.0010202288394793868 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.02it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.37it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.83 %
+lr=  0.0125
+Epoch= 46 Loss=0.0013663232093676925 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.17it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.16it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.59 %
+lr=  0.0125
+Epoch= 47 Loss=0.001244878745637834 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.01it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.04it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.73 %
+lr=  0.0125
+Epoch= 48 Loss=0.0006951451068744063 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:13<00:00,  6.05it/s]
+100%|██████████| 79/79 [00:03<00:00, 24.25it/s]
+  0%|          | 0/391 [00:00<?, ?it/s]Accuracy of the network on the 10000 test images: 88.59 %
+lr=  0.0125
+Epoch= 49 Loss=0.00041005612001754344 Batch_id=390 Accuracy=100.00: 100%|██████████| 391/391 [01:12<00:00,  6.02it/s]
+100%|██████████| 79/79 [00:03<00:00, 22.11it/s]Accuracy of the network on the 10000 test images: 88.63 %
+Finished Training
