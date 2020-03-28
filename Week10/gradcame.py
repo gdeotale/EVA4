@@ -41,7 +41,7 @@ class Res18(nn.Module):
         # register the hook
         h = x.register_hook(self.activations_hook)
         
-        x = F.avg_pool2d(x, 4)
+        x = F.avg_pool2d(x, 8)
         x = x.view(x.size(0), -1)
         x = self.linear(x)
         return x
