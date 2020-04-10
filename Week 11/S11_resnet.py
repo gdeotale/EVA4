@@ -53,5 +53,6 @@ class Net(nn.Module):
         x = x + x1
         x = self.maxlayer(x)
         x = x.view(-1, 512)
+        x = self.fc(x)
         x = F.softmax(x)
         return x
