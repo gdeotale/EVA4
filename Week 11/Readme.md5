@@ -1,59 +1,132 @@
-Problems Solved :
-Write a code that draws this curve (without the arrows). In submission, you'll upload your drawn curve and code for that
-
-Write a code which
-
-uses this new ResNet Architecture for Cifar10:
-
-PrepLayer - Conv 3x3 s1, p1) >> BN >> RELU [64k]
-
-Layer1 -
-
- X = Conv 3x3 (s1, p1) >> MaxPool2D >> BN >> RELU [128k]
- 
- R1 = ResBlock( (Conv-BN-ReLU-Conv-BN-ReLU))(X) [128k] 
- 
- Add(X, R1)
-Layer 2 -
-
- Conv 3x3 [256k]
- 
- MaxPooling2D
- 
- BN
- 
- ReLU
-Layer 3 -
-
- X = Conv 3x3 (s1, p1) >> MaxPool2D >> BN >> RELU [512k]
- 
- R2 = ResBlock( (Conv-BN-ReLU-Conv-BN-ReLU))(X) [512k]
- 
- Add(X, R2)
-MaxPooling with Kernel Size 4
-
-FC Layer
-
-SoftMax
-
-Uses One Cycle Policy such that:
-
-Total Epochs = 24
-
-Max at Epoch = 5
-
-LRMIN = FIND
-
-LRMAX = FIND
-
-NO Annihilation
-
-Uses this transform -RandomCrop 32, 32 (after padding of 4) >> FlipLR >> Followed by CutOut(8, 8)
-
-Batch size = 512
-
-Target Accuracy: 90%
-
 Accuracy Achieved :
  89.96% in 24th Epoch. Used CyclicLR.
-File Det
+
+Training logs:
+  0%|          | 0/98 [00:00<?, ?it/s]
+lr=  0.0025
+/content/gdrive/My Drive/Assignment/Model_/S11_resnet.py:61: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  x = F.softmax(x)
+Epoch= 0 Loss=2.108269453048706 Batch_id=97 Accuracy=36.90: 100%|██████████| 98/98 [00:21<00:00,  4.57it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.17it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 2.089532 Test Accuracy= 35.39
+lr=  0.00940000000000001
+Epoch= 1 Loss=1.9872329235076904 Batch_id=97 Accuracy=50.60: 100%|██████████| 98/98 [00:21<00:00,  4.59it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.02it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.9795985 Test Accuracy= 46.54
+lr=  0.016299999999999985
+Epoch= 2 Loss=1.9098414182662964 Batch_id=97 Accuracy=59.52: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.00it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.8513995 Test Accuracy= 55.04
+lr=  0.023199999999999995
+Epoch= 3 Loss=1.7701807022094727 Batch_id=97 Accuracy=75.60: 100%|██████████| 98/98 [00:21<00:00,  4.56it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.97it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.8627977 Test Accuracy= 61.18
+lr=  0.030100000000000005
+Epoch= 4 Loss=1.7966495752334595 Batch_id=97 Accuracy=73.51: 100%|██████████| 98/98 [00:21<00:00,  4.59it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.03it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.8147631 Test Accuracy= 63.56
+lr=  0.036999999999999984
+Epoch= 5 Loss=1.7617353200912476 Batch_id=97 Accuracy=75.60: 100%|██████████| 98/98 [00:21<00:00,  4.57it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.94it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.7396067 Test Accuracy= 68.07
+lr=  0.03518421052631579
+Epoch= 6 Loss=1.7324429750442505 Batch_id=97 Accuracy=82.74: 100%|██████████| 98/98 [00:21<00:00,  4.56it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.10it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.7773627 Test Accuracy= 72.28
+lr=  0.033368421052631575
+Epoch= 7 Loss=1.689328908920288 Batch_id=97 Accuracy=85.42: 100%|██████████| 98/98 [00:21<00:00,  4.53it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.25it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.722133 Test Accuracy= 75.99
+lr=  0.031552631578947374
+Epoch= 8 Loss=1.661212682723999 Batch_id=97 Accuracy=87.20: 100%|██████████| 98/98 [00:21<00:00,  4.58it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.97it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.7266393 Test Accuracy= 76.51
+lr=  0.029736842105263155
+Epoch= 9 Loss=1.6807167530059814 Batch_id=97 Accuracy=88.10: 100%|██████████| 98/98 [00:21<00:00,  4.56it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.89it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.7164496 Test Accuracy= 79.13
+lr=  0.02792105263157894
+Epoch= 10 Loss=1.6749767065048218 Batch_id=97 Accuracy=87.20: 100%|██████████| 98/98 [00:21<00:00,  4.56it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.89it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.7024373 Test Accuracy= 80.11
+lr=  0.026105263157894736
+Epoch= 11 Loss=1.6759313344955444 Batch_id=97 Accuracy=86.61: 100%|██████████| 98/98 [00:21<00:00,  4.58it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.02it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6854275 Test Accuracy= 80.39
+lr=  0.024289473684210524
+Epoch= 12 Loss=1.649263620376587 Batch_id=97 Accuracy=88.69: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.01it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6821756 Test Accuracy= 80.6
+lr=  0.02247368421052632
+Epoch= 13 Loss=1.6052765846252441 Batch_id=97 Accuracy=93.15: 100%|██████████| 98/98 [00:21<00:00,  4.57it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.97it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6326352 Test Accuracy= 82.06
+lr=  0.020657894736842097
+Epoch= 14 Loss=1.6190897226333618 Batch_id=97 Accuracy=92.26: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.01it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6915429 Test Accuracy= 81.99
+lr=  0.018842105263157893
+Epoch= 15 Loss=1.619164228439331 Batch_id=97 Accuracy=90.48: 100%|██████████| 98/98 [00:21<00:00,  4.56it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.17it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6900198 Test Accuracy= 83.98
+lr=  0.017026315789473688
+Epoch= 16 Loss=1.613308310508728 Batch_id=97 Accuracy=93.15: 100%|██████████| 98/98 [00:21<00:00,  4.58it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.23it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6494194 Test Accuracy= 83.8
+lr=  0.015210526315789466
+Epoch= 17 Loss=1.638891339302063 Batch_id=97 Accuracy=89.88: 100%|██████████| 98/98 [00:21<00:00,  4.60it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.21it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6323806 Test Accuracy= 84.01
+lr=  0.013394736842105263
+Epoch= 18 Loss=1.564145803451538 Batch_id=97 Accuracy=96.13: 100%|██████████| 98/98 [00:21<00:00,  4.56it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.94it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6433975 Test Accuracy= 84.4
+lr=  0.011578947368421058
+Epoch= 19 Loss=1.5844626426696777 Batch_id=97 Accuracy=94.64: 100%|██████████| 98/98 [00:21<00:00,  4.57it/s]
+100%|██████████| 20/20 [00:03<00:00,  6.28it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6114329 Test Accuracy= 85.44
+lr=  0.009763157894736835
+Epoch= 20 Loss=1.5899289846420288 Batch_id=97 Accuracy=93.75: 100%|██████████| 98/98 [00:21<00:00,  4.58it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.94it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.5971516 Test Accuracy= 86.71
+lr=  0.007947368421052632
+Epoch= 21 Loss=1.5841119289398193 Batch_id=97 Accuracy=94.35: 100%|██████████| 98/98 [00:21<00:00,  4.57it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.73it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.622858 Test Accuracy= 87.05
+lr=  0.006131578947368427
+Epoch= 22 Loss=1.5721993446350098 Batch_id=97 Accuracy=95.54: 100%|██████████| 98/98 [00:21<00:00,  4.54it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.76it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.6062977 Test Accuracy= 88.68
+lr=  0.004315789473684204
+Epoch= 23 Loss=1.5654116868972778 Batch_id=97 Accuracy=94.05: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.73it/s]
+  0%|          | 0/98 [00:00<?, ?it/s]
+Test Loss= 1.5823467 Test Accuracy= 89.18
+lr=  0.0025
+Epoch= 24 Loss=1.5440680980682373 Batch_id=97 Accuracy=95.83: 100%|██████████| 98/98 [00:21<00:00,  4.50it/s]
+100%|██████████| 20/20 [00:03<00:00,  5.89it/s]
+Test Loss= 1.5909954 Test Accuracy= 89.96
+Finished Training
