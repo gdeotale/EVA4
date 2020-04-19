@@ -1,3 +1,5 @@
+
+Details of Json file :
 Images:
 
 a. id : Unique id number for every image.
@@ -9,6 +11,8 @@ c. height : height of the image.
 d. file_name : name of the file.
 
 e. license : describe the image's license.
+
+f. date_captured : Date at which image was taken.
 
 Annotations:
 
@@ -25,4 +29,6 @@ d. Segmentation : (list[list(float)] or dictionary),
  B. dict : represents the pre-pixel segmentation mask.
 e. bbox : [x, y, width, height] of bounding box
 
-f. is_crowd : 0 or 1, explains whether this instance is labeled as coco's crowd region
+f. is_crowd : 0 or 1, explains whether this instance is labeled as coco's crowd region.
+
+g. area = area of the bounding box i.e (width*height)
