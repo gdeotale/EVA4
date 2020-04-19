@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from torch_lr_finder import LRFinder
+import os
+from tqdm.notebook import tqdm
 
 # functions to show an image
 def imshow(img):
@@ -40,10 +42,10 @@ def getclass_level1():
      for file in files:  
         maps.append(file.split('_')[0])
         break
-      maps.sort()
+  maps.sort()
   return maps
 
-def getclass_level2:
+def getclass_level2():
   f = open(os.getcwd()+'/tiny-imagenet-200/words.txt')
   count = 1;
   results = {}
