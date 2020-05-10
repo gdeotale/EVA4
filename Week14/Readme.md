@@ -35,8 +35,23 @@ Add your dataset statistics:
 			stdDev: - [0.15619204938398595, 0.15619204938398595, 0.15619204938398595]
 
 Show your dataset the way I have shown above in this readme
-1.Foreground Images
+1.Background Images
+![](Images/background.png)
+
+2.Foreground Images
 ![](Images/foreground.png)
+
+3. Foreground Masks
+![](Images/Masks.png)
+
+4. Foreground+Background
+![](Images/OverlayedImages.png)
+
+5. Foreground+Background Mask
+![](Images/OverlayedDepthMask.png)
+
+6. DepthMap
+![](Images/Overlayed.png)
 
 Explain how you created your dataset
 1. how were fg created with transparency :- 
