@@ -2,43 +2,50 @@ Create this dataset and share a link to GDrive (publicly available to anyone) in
 https://drive.google.com/drive/folders/1MST5DUffe3h9Q4B-x7tpNxXl4q4_E8ah
 
 Add your dataset statistics:
+
 1 . Kinds of images (fg, bg, fg_bg, masks, depth)
-	fg :- Different Man, Woman, kids, group of person(for background transparency we have taken png images)
-	bg :- We restricted background to library images(for restricting size of image we have taken jpg images)
-	fg_bg :- bg superposed over fg (for restricting size of images we have taken jpg images)
-	masks :- masks extracted from fg images(we have taken grayscale images)(.jpg)
-	depth :- We have extracted depth images from fg_bg using nyu model(for restricing size of images we have taken grayscale
+
+fg :- Different Man, Woman, kids, group of person(for background transparency we have taken png images)
+bg :- We restricted background to library images(for restricting size of image we have taken jpg images)
+fg_bg :- bg superposed over fg (for restricting size of images we have taken jpg images)
+masks :- masks extracted from fg images(we have taken grayscale images)(.jpg)
+depth :- We have extracted depth images from fg_bg using nyu model(for restricing size of images we have taken grayscale
 			images extracted from colormap)(.jpg) 
 			
 2. Total images of each kind
-	fg :- 200(flip + no flip)
-	bg :- 100
-	fg_bg :- 392783
-	masks :- 392469
-	depth :- 394673
+
+fg :- 200(flip + no flip)
+bg :- 100
+fg_bg :- 392783
+masks :- 392469
+depth :- 394673
 	
 3. The total size of the dataset :- 
-	9182546 Output/
-	6446124	Output/OverlayedImages/
-	1119541	Output/OverlayedMasks/
-	1616796	Output/DepthImage/
+
+9182546 Output/
+6446124	Output/OverlayedImages/
+1119541	Output/OverlayedMasks/
+1616796	Output/DepthImage/
 
 4. Mean/STD values for your fg_bg, masks and depth images
-	fg_bg :- (BGR format) 
-			Mean: - [0.3234962448835791, 0.3776562499540454, 0.4548452917585805]
-			stdDev: - [0.22465676724491895, 0.2299902629415973, 0.23860387182601098]
-	masks :- (BGR format)
-			Mean: - [0.07863663756127236, 0.07863663756127236, 0.07863663756127236]
-			stdDev: - [0.2541994994472449, 0.2541994994472449, 0.2541994994472449]
-	depth :- (BGR format)
-			Mean: - [0.2943823440611593, 0.2943823440611593, 0.2943823440611593]
-			stdDev: - [0.15619204938398595, 0.15619204938398595, 0.15619204938398595]
+
+fg_bg :- (BGR format) 
+Mean: - [0.3234962448835791, 0.3776562499540454, 0.4548452917585805]
+stdDev: - [0.22465676724491895, 0.2299902629415973, 0.23860387182601098]
+
+masks :- (BGR format)
+Mean: - [0.07863663756127236, 0.07863663756127236, 0.07863663756127236]
+stdDev: - [0.2541994994472449, 0.2541994994472449, 0.2541994994472449]
+
+depth :- (BGR format)
+Mean: - [0.2943823440611593, 0.2943823440611593, 0.2943823440611593]
+stdDev: - [0.15619204938398595, 0.15619204938398595, 0.15619204938398595]
 
 Show your dataset the way I have shown above in this readme
-1.Background Images
+1. Background Images
 ![](Images/background.png)
 
-2.Foreground Images
+2. Foreground Images
 ![](Images/foreground.png)
 
 3. Foreground Masks
