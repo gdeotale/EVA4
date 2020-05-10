@@ -1,10 +1,10 @@
-#Group Members:
+# Group Members:
 Gunjan Deotale, Abhijit Mali, Sanket Maheshwari, Sanjeev Raichur
 
 Create this dataset and share a link to GDrive (publicly available to anyone) in this readme file. 
 https://drive.google.com/drive/folders/1MST5DUffe3h9Q4B-x7tpNxXl4q4_E8ah
 
-#Add your dataset statistics:
+# Add your dataset statistics:
 
 1 . Kinds of images (fg, bg, fg_bg, masks, depth)
 
@@ -44,7 +44,7 @@ depth :- (BGR format)
 Mean: - [0.2943823440611593, 0.2943823440611593, 0.2943823440611593]
 stdDev: - [0.15619204938398595, 0.15619204938398595, 0.15619204938398595]
 
-#Show your dataset the way I have shown above in this readme
+# Show your dataset the way I have shown above in this readme
 1. Background Images
 ![](Images/background.png)
 
@@ -63,7 +63,7 @@ stdDev: - [0.15619204938398595, 0.15619204938398595, 0.15619204938398595]
 6. DepthMap
 ![](Images/Overlayed.png)
 
-#Explain how you created your dataset
+# Explain how you created your dataset
 1. how were fg created with transparency :- 
 	We mainly downloaded images from internet without background, for some images we extracted foreground
     by using background removal technique in PowerPoint as shown in lecture.
