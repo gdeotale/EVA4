@@ -36,7 +36,7 @@ Add your dataset statistics:
 
 Show your dataset the way I have shown above in this readme
 1.Foreground Images
-![]images/foreground.png
+![](Images/foreground.png)
 
 Explain how you created your dataset
 1. how were fg created with transparency :- 
