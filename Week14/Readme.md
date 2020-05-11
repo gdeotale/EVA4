@@ -19,16 +19,16 @@ depth :- We have extracted depth images from fg_bg using nyu model(for restricin
 
 fg :- 200(flip + no flip)
 bg :- 100
-fg_bg :- 392783
-masks :- 392469
-depth :- 394673
+fg_bg :- 399159
+masks :- 399607
+depth :- 399998
 	
 3. The total size of the dataset :- 
 
-9182546 Output/
-6446124	Output/OverlayedImages/
-1119541	Output/OverlayedMasks/
-1616796	Output/DepthImage/
+6550864	OverlayedImages/
+1142221	OverlayedMasks/
+1635801	DepthImage/
+9532934	../Output/
 
 4. Mean/STD values for your fg_bg, masks and depth images
 
