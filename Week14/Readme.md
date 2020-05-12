@@ -16,19 +16,43 @@ depth :- We have extracted depth images from fg_bg using nyu model(for restricin
 			images extracted from colormap)(.jpg) 
 			
 2. Total images of each kind
-
-fg :- 200(flip + no flip)
-bg :- 100
-fg_bg :- 399159
-masks :- 399607
-depth :- 399998
+import os
+print(sum([len(files) for r,d, files in os.walk('OverlayedMasks')]))
+print(sum([len(files) for r,d, files in os.walk('DepthImage/')]))
+print(sum([len(files) for r,d, files in os.walk('OverlayedImages')]))
+print(sum([len(files) for r,d, files in os.walk('Foreground')]))
+print(sum([len(files) for r,d, files in os.walk('ForegroundMask')]))
+print(sum([len(files) for r,d, files in os.walk('flipForegroundMask')]))
+print(sum([len(files) for r,d, files in os.walk('flipForeground')]))
+print(sum([len(files) for r,d, files in os.walk('Background')]))
+400000
+400000
+400000
+100
+100
+100
+100
+100
 	
 3. The total size of the dataset :- 
-
-6550864	OverlayedImages/
-1142221	OverlayedMasks/
-1635801	DepthImage/
-9532934	../Output/
+!du -s OverlayedImages/
+!du -s OverlayedMasks/
+!du -s DepthImage/
+!du -s Foreground/
+!du -s ForegroundMask/
+!du -s flipForeground/
+!du -s flipForegroundMask/
+!du -s Background/
+!du -s ../Output/
+6564640	OverlayedImages/
+1143463	OverlayedMasks/
+1635812	DepthImage/
+857	Foreground/
+177	ForegroundMask/
+857	flipForeground/
+176	flipForegroundMask/
+6484	Background/
+9547962	../Output/
 
 4. Mean/STD values for your fg_bg, masks and depth images
 
