@@ -103,13 +103,13 @@ following is our result at end of 12th epoch...
 ![](Sample/_test_12_3000.jpg)
 
 2. Actual Mask
-![](Sample/Actual mask.jpg)
+![](Sample/Actual_mask.jpg)
 
 3. Predicted Masks
 ![](Sample/predicted_mask.jpg)
 
 4. Actual depth
-![](Sample/Actual depth.jpg)
+![](Sample/Actual_depth.jpg)
 
 5. Predicted Depth
 ![](Sample/Predicted_depth.jpg)
