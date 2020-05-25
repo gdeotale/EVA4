@@ -77,16 +77,25 @@ Note: In addition to IOU, i have used Dice loss as a measure of accuracy to matc
 
 # Results
 From plots following things can be identified:
+
 Best train IOU for Depth images is 0.67
+
 Best train IOU for Mask images is 0.91
-Best L1loss for depth Images is 0.07
-Best L1loss for mask images is 0.05
+
+Best train L1loss for depth Images is 0.07
+
+Best train L1loss for mask images is 0.05
 
 Best test IOU for Depth images is 0.63
+
 Best test IOU for Mask images is 0.9
+
 Best test L1loss for depth Images is 0.075
+
 Best test L1loss for mask images is 0.055
+
 Best test Dice Loss coefficient for Depth images is 0.04
+
 Best test Dice Loss coefficient for Mask images is 0.031
 
 Test Accuracy for all 12 epochs including loss, iou and dice_loss have been saved in following file
