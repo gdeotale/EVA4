@@ -33,13 +33,15 @@ Estimated Total Size (MB): 544.02
 -----------------------------------------------
 
 # Optimizer and losses
-SGD has been used as optimizer and i manually tuned lr per epoch based on changed in training and testing loss. Started lr from 0.01
+SGD has been used as optimizer and i manually tuned lr per epoch based on changes in training and testing loss. 
+Started lr from 0.01
 
 Total loss = 1Xmask_loss + 2Xdepth_loss
+
 Reason behind giving more weightage to depth loss was based on simple observation that depth loss remained more than mask loss
 also the mask images were quick in attaining good results.
-(Tried L1 loss, Smooth L1 loss, Bce with logit loss, MSE loss, SSIM loss). As per my observation BCEwithlogitloss performed well for mask images
-but didn't perform well for depth images. L1 and Smotth L1 have fairly good accuracy for depth and mask images so our training has mixture of both losses.
+
+(Tried L1 loss, Smooth L1 loss, Bce with logit loss, MSE loss, SSIM loss). As per my observation BCEwithlogitloss performed well for mask images but didn't perform well for depth images. L1 and Smotth L1 have fairly good accuracy for depth and mask images so our training has mixture of both losses.
 Tried MSE or L2 loss, but it didn't have good output for mask as well as depth images, so stopped training for that after 1 epoch.
 SSIM performed bad for depth images, so didn't check its performance for mask images.
 
