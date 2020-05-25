@@ -45,7 +45,7 @@ def train(model, criterion, device, train_loader, optimizer, epoch):
         utils.show(sample0, sample, sample1, output, output_, bools, str(epoch)+"_"+str(batch_idx))
 
 def test(model, criterion, device, test_loader, epoch):
-  #model.train()
+  model.eval()
   test_loss = 0
   correct = 0
   loss1 = []
