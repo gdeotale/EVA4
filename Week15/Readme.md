@@ -80,9 +80,11 @@ Best test Dice coefficient for Mask images is 0.031
 
 Test Accuracy for all 12 epochs including loss, iou and dice_loss have been saved in following file
 https://github.com/gdeotale/EVA4/blob/master/Week15/Output.txt
+
 At the end of 12th epoch following is test result
+
 Epoch 12 Avg test loss:  0.24702741133570671  Avg mask loss:  0.06406917095233997  Avg depth loss:  0.0914791201243798
-Epoch 12 Avg mask iou:  0.8793281796959914  Avg depth iou:  0.5493079498816392
+Avg mask iou:  0.8793281796959914  Avg depth iou:  0.5493079498816392
 Avg mask dice loss:  0.037927588431040445  Avg depth dice loss:  0.05688627901077271
 
 All the model trained were saved at 
