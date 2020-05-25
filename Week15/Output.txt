@@ -1,0 +1,47 @@
+Epoch 1 Avg test loss:  0.26390275049010914  Avg mask loss:  0.06722640741467475  Avg depth loss:  0.0983381715680162
+Epoch 1 Avg mask iou:  0.8674779378395064  Avg depth iou:  0.47777768817275035
+ Avg mask dice loss:  0.04585180308024089  Avg depth dice loss:  0.06838968545595805
+*********************************
+Epoch 2 Avg test loss:  0.24695214985211691  Avg mask loss:  0.06404280641227961  Avg depth loss:  0.09145467170625925
+Epoch 2 Avg mask iou:  0.8793180816570854  Avg depth iou:  0.5495988613656753
+ Avg mask dice loss:  0.037927821691830954  Avg depth dice loss:  0.056843473625183105
+*********************************
+Epoch 3 Avg test loss:  0.24679558847149213  Avg mask loss:  0.06403736729472875  Avg depth loss:  0.09137911058664322
+Epoch 3 Avg mask iou:  0.8793379768200984  Avg depth iou:  0.5496442623709833
+ Avg mask dice loss:  0.037919731879234315  Avg depth dice loss:  0.0568065026919047
+*********************************
+Epoch 4 Avg test loss:  0.24712476315100987  Avg mask loss:  0.06407437825202941  Avg depth loss:  0.09152519237796465
+Epoch 4 Avg mask iou:  0.8792816718128748  Avg depth iou:  0.5487673796162112
+ Avg mask dice loss:  0.03793994804223379  Avg depth dice loss:  0.056997789851824444
+*********************************
+Epoch 5 Avg test loss:  0.24691180416544278  Avg mask loss:  0.06404682072252035  Avg depth loss:  0.0914324917887648
+Epoch 5 Avg mask iou:  0.8793511589212503  Avg depth iou:  0.5492502772500987
+ Avg mask dice loss:  0.03792236937681834  Avg depth dice loss:  0.05686418894131978
+*********************************
+Epoch 6 Avg test loss:  0.24713852662245434  Avg mask loss:  0.06409941420704127  Avg depth loss:  0.09151955610861381
+Epoch 6 Avg mask iou:  0.8792563451788578  Avg depth iou:  0.5491134877208921
+ Avg mask dice loss:  0.03796311006546021  Avg depth dice loss:  0.056925680526097616
+*********************************
+Epoch 7 Avg test loss:  0.24695214985211691  Avg mask loss:  0.06404280641227961  Avg depth loss:  0.09145467170625925
+Epoch 7 Avg mask iou:  0.8793180816570854  Avg depth iou:  0.5495988613656753
+ Avg mask dice loss:  0.037927821691830954  Avg depth dice loss:  0.056843473625183105
+*********************************
+Epoch 8 Avg test loss:  0.24679558847149213  Avg mask loss:  0.06403736729472875  Avg depth loss:  0.09137911058664322
+Epoch 8 Avg mask iou:  0.8793379768200984  Avg depth iou:  0.5496442623709833
+ Avg mask dice loss:  0.037919731879234315  Avg depth dice loss:  0.0568065026919047
+*********************************
+Epoch 9 Avg test loss:  0.24712476315100987  Avg mask loss:  0.06407437825202941  Avg depth loss:  0.09152519237796465
+Epoch 9 Avg mask iou:  0.8792816718128748  Avg depth iou:  0.5487673796162112
+ Avg mask dice loss:  0.03793994804223379  Avg depth dice loss:  0.056997789851824444
+*********************************
+Epoch 10 Avg test loss:  0.24691180416544278  Avg mask loss:  0.06404682072252035  Avg depth loss:  0.0914324917887648
+Epoch 10 Avg mask iou:  0.8793511589212503  Avg depth iou:  0.5492502772500987
+ Avg mask dice loss:  0.03792236937681834  Avg depth dice loss:  0.05686418894131978
+*********************************
+Epoch 11 Avg test loss:  0.2469939971168836  Avg mask loss:  0.06404308063189189  Avg depth loss:  0.09147545825938384
+Epoch 11 Avg mask iou:  0.8793547849471461  Avg depth iou:  0.5494939951215141
+ Avg mask dice loss:  0.037917268792788186  Avg depth dice loss:  0.056903788614273074
+*********************************
+Epoch 12 Avg test loss:  0.24702741133570671  Avg mask loss:  0.06406917095233997  Avg depth loss:  0.0914791201243798
+Epoch 12 Avg mask iou:  0.8793281796959914  Avg depth iou:  0.5493079498816392
+ Avg mask dice loss:  0.037927588431040445  Avg depth dice loss:  0.05688627901077271
