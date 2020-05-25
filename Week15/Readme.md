@@ -9,11 +9,13 @@ iv. Depth Images: These are images in which we have extracted depth images from 
 Please note Foreground+Background, Mask and depth have 4 zipped files each, each having 100k images based on generation process in our group 
 
 # Training
+
 Following is path of main .ipynb file used for training and testing
 https://github.com/gdeotale/EVA4/blob/master/Week15/15b__.ipynb
 
 Following is path of Model used:
 https://github.com/gdeotale/EVA4/blob/master/Week15/Net/Model.py
+
 And following is Model Summary
 ================================================================
 Total params: 677,824
