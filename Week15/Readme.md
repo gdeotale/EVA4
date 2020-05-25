@@ -15,10 +15,10 @@ Please note Foreground+Background, Mask and depth have 4 zipped files each, each
 Following is path of main .ipynb file used for training and testing
 https://github.com/gdeotale/EVA4/blob/master/Week15/15b__.ipynb 
 
+# Model Summary
 Following is path of Model used:
 https://github.com/gdeotale/EVA4/blob/master/Week15/Net/Model.py
 
-# Model Summary
 Total params: 677,824
 Trainable params: 677,824
 Non-trainable params: 0
