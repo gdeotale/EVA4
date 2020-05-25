@@ -16,7 +16,8 @@ https://github.com/gdeotale/EVA4/blob/master/Week15/15b__.ipynb
 Following is path of Model used:
 https://github.com/gdeotale/EVA4/blob/master/Week15/Net/Model.py
 
-And following is Model Summary
+Model Summary
+
 ================================================================
 Total params: 677,824
 Trainable params: 677,824
