@@ -99,7 +99,20 @@ ii. Output_Test: Images generated at end of every 500 batches of size 32 each. I
 epoch number
 
 following is our result at end of 12th epoch...
+1. Background+Foreground Images
+![](Sample/_test_12_3000.jpg)
 
+2. Actual Mask
+![](Sample/Actual mask.jpg)
+
+3. Predicted Masks
+![](Sample/predicted_mask.jpg)
+
+4. Actual depth
+![](Sample/Actual depth.jpg)
+
+5. Predicted Depth
+![](Sample/Predicted_depth.jpg)
 
 #Observations:
 
