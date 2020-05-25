@@ -51,18 +51,28 @@ accuracy in both mask and depth to compare with target remains the same.
 
 # Train Plots
 train_iou_depth.png
+
 train_iou_mask.png
+
 train_loss_depth.png
+
 train_loss_mask.png
 
 # Test plots 
 dice_loss_depth.png
+
 dice_loss_mask.png
+
 test_iou_depth.png
+
 test_iou_mask.png
+
 test_loss_depth.png
+
 test_loss_full.png
+
 test_loss_mask.png
+
 Note: In addition to IOU, i have used Dice loss as a measure of accuracy to match against target.
 
 # Results
