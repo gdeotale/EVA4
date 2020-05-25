@@ -18,16 +18,20 @@ https://github.com/gdeotale/EVA4/blob/master/Week15/Net/Model.py
 
 Model Summary
 
-================================================================
+==============================================
+
 Total params: 677,824
 Trainable params: 677,824
 Non-trainable params: 0
-----------------------------------------------------------------
+
+-----------------------------------------------
+
 Input size (MB): 0.19
 Forward/backward pass size (MB): 541.25
 Params size (MB): 2.59
 Estimated Total Size (MB): 544.02
----------------------------------------------------------------
+
+-----------------------------------------------
 
 SGD has been used as optimizer and i manually tuned lr per epoch based on changed in training and testing loss. Started lr from 0.01
 
