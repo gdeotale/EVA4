@@ -16,17 +16,22 @@ https://github.com/gdeotale/EVA4/blob/master/Week15/15b__.ipynb
 Following is path of Model used:
 https://github.com/gdeotale/EVA4/blob/master/Week15/Net/Model.py
 
-And following is Model Summary
-================================================================
+Model Summary
+
+==============================================
+
 Total params: 677,824
 Trainable params: 677,824
 Non-trainable params: 0
-----------------------------------------------------------------
+
+-----------------------------------------------
+
 Input size (MB): 0.19
 Forward/backward pass size (MB): 541.25
 Params size (MB): 2.59
 Estimated Total Size (MB): 544.02
----------------------------------------------------------------
+
+-----------------------------------------------
 
 SGD has been used as optimizer and i manually tuned lr per epoch based on changed in training and testing loss. Started lr from 0.01
 
@@ -75,9 +80,11 @@ Best test Dice coefficient for Mask images is 0.031
 
 Test Accuracy for all 12 epochs including loss, iou and dice_loss have been saved in following file
 https://github.com/gdeotale/EVA4/blob/master/Week15/Output.txt
+
 At the end of 12th epoch following is test result
+
 Epoch 12 Avg test loss:  0.24702741133570671  Avg mask loss:  0.06406917095233997  Avg depth loss:  0.0914791201243798
-Epoch 12 Avg mask iou:  0.8793281796959914  Avg depth iou:  0.5493079498816392
+Avg mask iou:  0.8793281796959914  Avg depth iou:  0.5493079498816392
 Avg mask dice loss:  0.037927588431040445  Avg depth dice loss:  0.05688627901077271
 
 All the model trained were saved at 
